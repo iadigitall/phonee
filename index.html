@@ -70,13 +70,11 @@
   }
   nav.dark-mode .nav-links a, nav.dark-mode .nav-logo-text { color: var(--text-light); }
 
-  .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
-  .nav-logo svg {
-    width: 20px; height: auto;
-    color: var(--orange);
-    transition: color 0.3s;
+  .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav-logo-avatar {
+    width: 40px; height: 40px; border-radius: 50%; object-fit: cover;
+    border: 1px solid rgba(124,58,237,0.4);
   }
-  nav.dark-mode .nav-logo svg { color: var(--orange); }
   .nav-logo-text { font-size: 19px; font-weight: 700; color: var(--text-main); letter-spacing: -0.4px; transition: color 0.3s; }
 
   .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
@@ -368,8 +366,8 @@
   footer { background: var(--bg-light); padding: 80px 40px 40px; color: var(--text-muted); font-size: 14px; border-top: 1px solid rgba(0,0,0,0.05); }
   .footer-content { max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 40px; margin-bottom: 20px; }
   .footer-brand { max-width: 350px; }
-  .footer-logo { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; color: var(--text-main); }
-  .footer-logo svg { width: 20px; color: var(--orange); }
+  .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; color: var(--text-main); }
+  .footer-logo img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(124,58,237,0.4); }
   .footer-logo h3 { font-size: 18px; font-weight: 800; margin: 0; letter-spacing: -0.5px; }
   .footer-brand p { line-height: 1.6; margin-bottom: 12px; }
   .footer-links { display: flex; gap: 60px; flex-wrap: wrap; }
@@ -388,7 +386,7 @@
 
 <nav id="navbar" class="dark-mode">
   <a href="#" class="nav-logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.4"></rect><line x1="10.3" y1="18.3" x2="13.7" y2="18.3"></line></svg>
+    <img src="images/capa.jpg" alt="NewPhone" class="nav-logo-avatar">
     <span class="nav-logo-text">NewPhone</span>
   </a>
   <ul class="nav-links">
@@ -654,7 +652,7 @@
   <div class="footer-content">
     <div class="footer-brand">
       <div class="footer-logo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.4"></rect><line x1="10.3" y1="18.3" x2="13.7" y2="18.3"></line></svg>
+        <img src="images/capa.jpg" alt="NewPhone">
         <h3>NewPhone</h3>
       </div>
       <p>Especialista Apple: compra, venda e assistência técnica certificada no Gama, Brasília/DF.</p>
